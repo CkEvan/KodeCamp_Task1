@@ -1,35 +1,13 @@
 # KodeCamp_Task1
-## How to Set up Infrastructural Structure of a Small business
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Task Solution</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        pre {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            }
-    </style>
-</head>
-<body>
+## How to Set up Structure Small business Infrastructure
 
-<h1>TASK</h1>
-<p>As a DevOps Engineer, you have been consulted to set up the infrastructure servers of a small business. Create users, and assign them to groups. Create the Company directories and assign the right access to the right groups.</p>
+### DevOps Task Solution
+    
+As a DevOps Engineer, you have been consulted to set up the infrastructure servers of a small business. Create users, and assign them to groups. Create the Company directories and assign the right access to the right groups.
 
-<h1>SOLUTION</h1>
+## SOLUTION
 
-<h2>Setting Up the Environment and User Accounts</h2>
+Setting Up the Environment and User Accounts
 
 <ol>
     <li><strong>Spin up the virtual environment:</strong>
