@@ -1,5 +1,5 @@
 # KodeCamp_Task1
-How to Set up Infrastructural Structure of a Small business
+## How to Set up Infrastructural Structure of a Small business
 <!DOCTYPE html>
 <html lang="en">
 <head>
