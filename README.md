@@ -1,5 +1,5 @@
 # KodeCamp_Task1
-## How to Set up Structure Small business Infrastructure
+## How to Set up Small Business Infrastructure
 
 ### DevOps Task Solution
     
