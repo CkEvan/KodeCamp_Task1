@@ -1,0 +1,150 @@
+
+TASK 2 DOCUMENTATION
+
+Open Powershell and spin up ubuntu machine using the following commands:
+Vagrant up
+Vagrant ssh
+This must be done in your work environment. 
+
+I created a new named Kodecamp_Stores and carried out the task on Kodecamp_Stores. 
+pwd
+
+Create a new user who will assume the role of devops engineer and grant him/her the superuser privilege: 
+sudo useradd devopsengineer
+sudo passwd devopsengineer
+su devopsengineer
+
+grant user devopsengineer super user privileges using the command: 
+sudo visudo
+
+su devopsengineer
+creating users and and password.
+sudo useradd andrew
+sudo useradd julius
+sudo useradd chizi
+sudo useradd jennifer
+sudo useradd adeola
+sudo useradd bach
+sudo useradd gozie
+sudo useradd ogochukwu
+
+command to assign passwd
+sudo useradd username
+sudo passwd andrew
+sudo passwd julius
+sudo passwd chizi
+sudo passwd jennifer
+sudo passwd adeola
+sudo passwd bach
+sudo passwd gozie
+sudo passwd ogochukwu
+
+Assigning roles to each user as I forgot to do so while creating the users
+sudo usermod -c "System Administrator" andrew
+sudo usermod -c "Legal" julius
+sudo usermod -c "Human Resource Manager" chizi
+sudo usermod -c "Sales" jennifer
+sudo usermod -c "Business Strategist" adeola
+sudo usermod -c "CEO" bach
+sudo usermod -c "IT Intern" gozie
+sudo usermod -c "Finance Manager" ogochukwu
+
+Command I would have used to assign user roles while creating the user:
+sudo useradd -c "Role" username
+Eg: sudo useradd -c "System Administrator" andrew
+
+
+
+Creating groups and assigning users to a group. 
+
+sudo groupadd IT_Team
+sudo groupadd Legal_Team
+sudo groupadd Sales_Team
+sudo groupadd HR
+sudo groupadd Business_Team
+sudo groupadd Finance_Team
+
+Adding each user to a group
+sudo usermod -aG IT_Team gozie
+sudo usermod -aG IT_Team andrew
+sudo usermod -aG IT_Team bach
+sudo usermod -aG Legal_Team julius
+sudo usermod -aG Legal_Team bach
+sudo usermod -aG Sales_Team jennifer
+sudo usermod -aG Sales_Team bach
+sudo usermod -aG HR bach
+sudo usermod -aG HR chizi
+sudo usermod -aG Business_Team adeola
+sudo usermod -aG Business_Team bach
+sudo usermod -aG Finance_Team ogochukwu
+sudo usermod -aG Finance_Team bach
+
+
+sudo mkdir Finance_Budgets
+sudo mkdir Contract_Documents
+sudo mkdir Business_Projections
+sudo mkdir Business_Models
+sudo mkdir Employee_Data
+sudo mkdir Company_Vision_Mission_Statement
+sudo Server_Configuration_Script
+
+Assigning the right access to the right groups. I made each group to inherit Company_Vision_Mission_Statement
+
+sudo chown -R :Finance_Team ./Finance_Budgets ./Company_Vision_Mission_Statement
+sudo chown -R :Legal_Team ./Contract_Documents ./Company_Vision_Mission_Statement
+sudo chown -R :Business_Team ./Busines_models ./Company_Vision_Mission_Statement
+sudo chown -R :Business_Team ./Busines_models ./Company_Vision_Mission_Statement
+sudo chown -R :HR ./Employee_Data ./Company_Vision_Mission_Statement
+sudo chown -R :IT_Team ./Server_Configuration_Script ./Company_Vision_Mission_Statement
+
+
+Verify directory permissions:
+ ls -ld Finance_Budgets/
+
+Apply sticky bit to each directory to prevent users from deleting each other's files:
+
+   sudo chmod +t ./Server_Configuration.Script/
+   sudo chmod +t ./CompanyVision_MissionStatement/
+   sudo chmod +t ./Employee_Data/
+   sudo chmod +t ./Business_Models/
+   sudo chmod +t ./Business_Projections/
+   sudo chmod +t ./Contract_Documents/
+   sudo chmod +t ./Finance_Budgets/
+
+
+Verify the sticky bit setting:
+ ls -ld ./Server_Configuration.Script/
+
+
+
+
+The Task!
+
+
+Instructions: Practically work on this classwork on your Vagrant machine, then write out the commands used to a Google Doc.
+
+ As a DevOps Engineer, you have been consulted to set up the infrastructure servers of a small business. 
+
+Create the following users, and assign them to groups
+Create the Company directories and assign the right access to the right groups.
+
+Employees:
+
+Andrew, System Administrator
+Julius, Legal
+Chizi, Human Resource Manager
+Jeniffer, Sales Manager
+Adeola, Business Strategist
+Bach, CEO
+Gozie, IT intern
+Ogochukwu, Finance Manager 
+
+Company Documents (Directories):
+
+Finance Budgets
+Contract Documents
+Business Projections
+Business Models
+Employee Data
+Company Vision and Mission Statement
+Server Configuration Script
